@@ -11,7 +11,7 @@
 	<nav class="navbar navbar-inverse navbar-fixed-top" >
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a class="navbar-brand " style="color: white">AppMe</a>
+				<a class="navbar-brand " style="color: white">CRAFTCLAN</a>
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav navbar-left">

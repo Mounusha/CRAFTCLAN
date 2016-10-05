@@ -8,7 +8,7 @@
 <%@include file="/WEB-INF/includes/Frameworks.jsp"%>
 <script
 	src="${pageContext.request.contextPath}/resources/js/AngularControllers/App.js"></script>
-<title>AppMe</title>
+<title>CRAFTCLAN</title>
 </head>
 <body style="padding-top: 50px; margin-bottom: 75px">
 	<header><%@include file="/WEB-INF/includes/Header.jsp"%></header>
