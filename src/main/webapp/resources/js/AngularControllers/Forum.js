@@ -1,5 +1,6 @@
 app.controller('ForumController', [ '$scope', '$http', function($scope, $http) {
-	
+	var BASE_URL = 'http://localhost:8081/CRAFTCLAN';
+	$scope.userid=document.getElementById("userid").value;
 	$scope.submit = function() {
 		var BASE_URL = 'http://localhost:8081/CRAFTCLAN';
 		$scope.forum = {	
@@ -69,7 +70,24 @@ app.controller('ForumController', [ '$scope', '$http', function($scope, $http) {
 			alert("Error");
 		});
 	};
-	
-}]);
+	$scope.accessForum = function(f_userid) {
+		 		//alert("Hello"+f_userid);
+		 		if($scope.userid==f_userid)
+		 		{
+		 			console.log($scope.userid);
+		 			
+		 			return true;
+		 		console.log("true")
+		 		}
+		 		else
+		 		{
+		 			return false;
+		 			console.log("false")
+		 		}
+		 	}
+		 	
+		  }]);
+		  
+
 
 

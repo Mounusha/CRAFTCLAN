@@ -45,4 +45,9 @@ public class RC_Forum {
 		Forum forum=forumService.editForum(forumid);
 		return new ResponseEntity<Forum>(forum, HttpStatus.OK);
 	}
+	@GetMapping("/forumAccess")
+	 	public Boolean forumAccess()
+	 	{
+	 		return false;
+	 	}	
 }

@@ -4,7 +4,9 @@
 	uri="http://www.springframework.org/security/tags"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <div data-ng-controller="IndividualForum">
-	<div style="margin-top: 20px;border: 5px;border-color: blue">
+<div class="container">
+             <div class="row">
+	<div style="margin-top: 20px;border: 5px;border-color: lavender">
 		<c:if test="${!empty forumList}">
 			<c:forEach items="${forumList}" var="forum">
 				<div  hidden="true">
@@ -13,7 +15,7 @@
 					</p>
 				</div>
 				<div style="background-color: lavender">
-					<p style="padding: 10px; font-size: large;">
+					<p style="padding: 10px; font-size: medium;">
 						<strong>${forum.forumName}</strong>
 					</p>
 				</div>
@@ -22,6 +24,7 @@
 				</div>
 			</c:forEach>
 		</c:if>
+		</div></div>
 	</div>
 	<br>
 	<sec:authorize access="isAuthenticated()">
@@ -49,7 +52,7 @@
 			</thead> -->
 			<tbody>
 				<tr data-ng-repeat="comment in comments">
-					<td width="80%">{{comment.commentDesc}}</td>
+					<td width="70%">{{comment.commentDesc}}</td>
 					<td width="20%">{{comment.commenttime}}</td>
 					<%-- <td width="20%">
 						<div class="btn-group  btn-group-justified ">
