@@ -15,9 +15,9 @@
 			</div>
 		 	<div class="collapse navbar-collapse" id="myNavbar"> 
 				<ul class="nav navbar-nav navbar-left">
-					<li><a href="${pageContext.request.contextPath}/blog style="color:black;font-family:ms serif">Blog</a></li>
-					<li><a href="${pageContext.request.contextPath}/forum style="color:black;font-family:ms serif">Forum</a></li>
-					<li><a href="${pageContext.request.contextPath}/chat style="color:black;font-family:ms serif">Chat</a></li></ul>
+					<li><a href="${pageContext.request.contextPath}/blog">Blog</a></li>
+					<li><a href="${pageContext.request.contextPath}/forum">Forum</a></li>
+					<li><a href="${pageContext.request.contextPath}/chat">Chat</a></li></ul>
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav navbar-right">
 					<sec:authorize access="isAuthenticated()">
