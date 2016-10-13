@@ -5,7 +5,7 @@
  <style>
  body{
    
-    background-image: linear-gradient(#79a06d, #79a06d); 
+    background-image: linear-gradient(#C0C0C0,#C0C0C0); 
 }
 
 #box{
@@ -24,7 +24,7 @@ h2{
   <div class="container-fluid">
                 <div class="row-fluid" >
                 <div class="modal fade" id="registration" role="dialog">
-                     <div class="col-md-offset-4 col-md-4" id="box">
+                     <div class="col-md-offset-4 col-md-4" id="box"style="color:white;font-family:Ravie">
                       <h2>NEW ACCOUNT</h2>
  <div class="modal-body" style="padding: 30px 50px;">
 					<form role="form" data-ng-submit="submit()"
