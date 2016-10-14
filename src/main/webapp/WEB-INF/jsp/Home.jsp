@@ -12,8 +12,10 @@
 	src="${pageContext.request.contextPath}/resources/js/AngularControllers/App.js"></script>
 <title>CRAFTCLAN</title>
 </head>
-<body style="padding-top: 50px; margin-bottom: 75px">
+<body  style="padding-top: 50px; margin-bottom: 75px;background-image:url('resources/images/1.jpg')">
 	<header><%@include file="/WEB-INF/includes/Header.jsp"%></header>
+	
+	 <div class="container" style="background:lavender">
 	<div style="padding-top: 25px">
 		<c:choose>
 			<c:when test="${BlogClicked}">
@@ -46,7 +48,13 @@
 					</c:import>
 				</div>
 			</c:when>
-		<c:otherwise>
+		<c:when test="${HomeClicked}">
+				<div class="container">
+					<c:import url="/WEB-INF/jsp/Home.jsp">
+					</c:import>
+				</div>
+			</c:when>
+ 	<c:otherwise>
 			<sec:authorize access="hasRole('ROLE_USER')">
 				<div class="container">
 					<c:import url="/WEB-INF/jsp/Body.jsp">
@@ -54,9 +62,9 @@
 				</div>
 			</sec:authorize>
 			</c:otherwise> 
- 		
+ 	
  </c:choose>
-	</div>
+	</div></div>
 	<%-- <div class="container">
 		<h2>BootStrap Tabs</h2>
 		<ul class="nav nav-tabs">
@@ -97,7 +105,6 @@
 			}
 		});
 	</script>
-
 
 
 </body>

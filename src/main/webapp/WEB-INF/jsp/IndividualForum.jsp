@@ -6,7 +6,7 @@
 <div data-ng-controller="IndividualForum">
 <div class="container">
              <div class="row">
-	<div style="margin-top: 20px;border: 5px;border-color: lavender">
+	<div style="margin-top: 20px;border: 5px;border-color: blue">
 		<c:if test="${!empty forumList}">
 			<c:forEach items="${forumList}" var="forum">
 				<div  hidden="true">
@@ -14,12 +14,12 @@
 						<input type="number" value="${forum.fid}" id="fid">
 					</p>
 				</div>
-				<div style="background-color: lavender">
-					<p style="padding: 10px; font-size: medium;">
+				<div style="background-color: lightgrey">
+					<p style="padding: 10px; font-size: large;">
 						<strong>${forum.forumName}</strong>
 					</p>
 				</div>
-				<div style="background-color: lavender">
+				<div style="background-color: lightgrey">
 					<p style="padding: 10px; font-size: medium">${forum.forumDesc}</p>
 				</div>
 			</c:forEach>
