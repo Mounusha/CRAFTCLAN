@@ -10,7 +10,6 @@ app.controller('ChatCtrl', function($scope, ChatService) {
 		$scope.messages.push(message);
 	});
 });
-
 app.service("ChatService", function($q, $timeout) {
 	var service = {}, 
 	listener = $q.defer(), 
